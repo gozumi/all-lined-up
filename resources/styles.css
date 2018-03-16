@@ -1,0 +1,34 @@
+#hour-foreground {
+  fill: #ff0000;
+}
+
+#hour-background {
+  fill: #ff0000;
+  fill-opacity: .5;
+}
+
+#minute-foreground {
+  fill: #00ff00;
+}
+
+#minute-background {
+  fill: #00ff00;
+  fill-opacity: .5;
+}
+
+#second-foreground {
+  fill: #0000ff;
+}
+
+#second-background {
+  fill: #0000ff;
+  fill-opacity: .5;
+}
+
+/* .time-text {
+  fill: #ffffff;
+}
+ */
+/* #minute-text {
+  fill: #ff0000;
+} */
