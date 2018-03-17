@@ -1,0 +1,48 @@
+#time__hour-foreground {
+  fill: #ff0000;
+}
+
+#time__hour-background {
+  fill: #ff0000;
+  fill-opacity: .3;
+}
+
+#time__minute-foreground {
+  fill: orange;
+}
+
+#time__minute-background {
+  fill: orange;
+  fill-opacity: .3;
+}
+
+#time__second-foreground {
+  fill: #0000ff;
+}
+
+#time__second-background {
+  fill: #0000ff;
+  fill-opacity: .3;
+}
+
+#date__day-foreground {
+  fill: teal;
+}
+
+#date__day-background {
+  fill: teal;
+  fill-opacity: .3;
+}
+
+#date__month-foreground {
+  fill: blueviolet;
+}
+
+#date__month-background {
+  fill: blueviolet;
+  fill-opacity: .3;
+}
+
+#date__year-background {
+  fill: orange;
+}

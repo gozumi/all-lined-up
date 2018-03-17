@@ -1,0 +1,17 @@
+<g id="time">
+    <g id="time__hour-group" pointer-events="visible">
+        <rect id="time__hour-background"/>
+        <rect id="time__hour-foreground"/>
+        <text id="time__hour-text" class="time__text"  fill="white"/>
+    </g>
+    <g id="time__minute-group" pointer-events="visible">
+        <rect id="time__minute-background"/>
+        <rect id="time__minute-foreground"/>
+        <text id="time__minute-text" class="time__text" fill="white"/>
+    </g>
+    <g id="time__second-group" pointer-events="visible">
+        <rect id="time__second-background"/>
+        <rect id="time__second-foreground"/>
+        <text id="time__second-text" class="time__text" fill="white"/>
+    </g>
+</g>
