@@ -24,6 +24,9 @@ export function drawClock(config) {
   config.secondText.text = seconds
 }
 
+/**
+ * 
+ */
 export function getClockConfiguration() {
   const root = document.getElementById('clock')
   
