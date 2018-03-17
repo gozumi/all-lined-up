@@ -4,7 +4,7 @@ import document from "document"
 *
 * @param 
 */
-export function drawClock(config) {
+export function drawClock(config: any) {
   const totalHours = 24
   const today = new Date()
   const hours = today.getHours() % totalHours
