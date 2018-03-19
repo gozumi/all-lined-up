@@ -1,0 +1,4 @@
+<g id="heart-rate">
+    <rect id="heart-rate__background" />
+    <text id="heart-rate__value" fill="white" class="heart-rate__value" text-length="3"/>
+</g>
