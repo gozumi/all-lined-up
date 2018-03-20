@@ -2,4 +2,5 @@
   <link rel="import" href="_time.gui" />
   <link rel="import" href="_date.gui" />
   <link rel="import" href="_heart-rate.gui" />
+  <link rel="import" href="_user-activity.gui" />
 </svg>
