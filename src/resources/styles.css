@@ -1,9 +1,9 @@
 #time__hour-foreground {
-  fill: #ff0000;
+  fill: firebrick;
 }
 
 #time__hour-background {
-  fill: #ff0000;
+  fill: firebrick;
   fill-opacity: .3;
 }
 
@@ -49,4 +49,49 @@
 
 #heart-rate {
   fill: olive;
+}
+
+#user-activity__steps-foreground {
+  fill: cornflowerblue;
+}
+
+#user-activity__steps-background {
+  fill: cornflowerblue;
+  opacity: .3;
+}
+
+#user-activity__distance-foreground {
+  fill: darkorchid;
+}
+
+#user-activity__distance-background {
+  fill: darkorchid;
+  opacity: .3;
+}
+
+#user-activity__floors-foreground {
+  fill: orchid;
+}
+
+#user-activity__floors-background {
+  fill: orchid;
+  opacity: .3;
+}
+
+#user-activity__energy-foreground {
+  fill: goldenrod;
+}
+
+#user-activity__energy-background {
+  fill: goldenrod;
+  opacity: .3;
+}
+
+#user-activity__time-foreground {
+  fill: hotpink;
+}
+
+#user-activity__time-background {
+  fill: hotpink;
+  opacity: .3;
 }

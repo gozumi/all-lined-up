@@ -1,0 +1,37 @@
+<g id="user-activity">
+  <g id="user-activity__steps">
+    <rect id="user-activity__steps-background" />
+    <rect id="user-activity__steps-foreground" />
+    <g id="user-activity__steps-value-text-group">
+      <text id="user-activity__steps-value-text" fill="white" text-length="10"/>
+    </g>
+  </g>
+  <g id="user-activity__distance">
+    <rect id="user-activity__distance-background" />
+    <rect id="user-activity__distance-foreground" />
+    <g id="user-activity__distance-value-text-group">
+      <text id="user-activity__distance-value-text" fill="white" text-length="10"/>
+    </g>
+  </g>
+  <g id="user-activity__floors">
+    <rect id="user-activity__floors-background" />
+    <rect id="user-activity__floors-foreground" />
+    <g id="user-activity__floors-value-text-group">
+      <text id="user-activity__floors-value-text" fill="white" text-length="10"/>
+    </g>
+  </g>
+  <g id="user-activity__energy">
+    <rect id="user-activity__energy-background" />
+    <rect id="user-activity__energy-foreground" />
+    <g id="user-activity__energy-value-text-group">
+      <text id="user-activity__energy-value-text" fill="white" text-length="10"/>
+    </g>
+  </g>
+  <g id="user-activity__time">
+    <rect id="user-activity__time-background" />
+    <rect id="user-activity__time-foreground" />
+    <g id="user-activity__time-value-text-group">
+      <text id="user-activity__time-value-text" fill="white" text-length="10"/>
+    </g>
+  </g>
+</g>
