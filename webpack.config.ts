@@ -30,7 +30,7 @@ const config: webpack.Configuration = {
   },
 
   plugins: [
-    new webpack.IgnorePlugin(/(clock|document)/),
+    new webpack.IgnorePlugin(/(clock|document|heart-rate)/),
     new CleanWebpackPlugin(['dist']),
     new CopyWebpackPlugin([
       { from: './src/app', to: '../fitbit/app' },

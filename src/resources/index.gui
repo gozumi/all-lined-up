@@ -1,4 +1,5 @@
 <svg id="root" viewport-fill="#111111">
   <link rel="import" href="_time.gui" />
   <link rel="import" href="_date.gui" />
+  <link rel="import" href="_heart-rate.gui" />
 </svg>

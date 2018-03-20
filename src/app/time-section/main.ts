@@ -55,7 +55,7 @@ export function getTimeConfiguration () {
   elements.hourBackground.y = 0
   elements.hourForeground.height = elements.timeBarHeight
   elements.hourForeground.y = 0
-  elements.hourText.x = 25
+  elements.hourText.x = 0
   elements.hourText.y = elements.timeBarHeight
 
   elements.minuteBackground.width = elements.screen.width
@@ -63,7 +63,7 @@ export function getTimeConfiguration () {
   elements.minuteBackground.y = elements.timeBarHeight
   elements.minuteForeground.height = elements.timeBarHeight
   elements.minuteForeground.y = elements.timeBarHeight
-  elements.minuteText.x = 25
+  elements.minuteText.x = 0
   elements.minuteText.y = elements.timeBarHeight * 2
 
   elements.secondBackground.width = elements.screen.width
@@ -71,7 +71,7 @@ export function getTimeConfiguration () {
   elements.secondBackground.y = elements.timeBarHeight * 2
   elements.secondForeground.height = elements.timeBarHeight
   elements.secondForeground.y = elements.timeBarHeight * 2
-  elements.secondText.x = 25
+  elements.secondText.x = 0
   elements.secondText.y = elements.timeBarHeight * 3
 
   // position the time
