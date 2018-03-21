@@ -63,7 +63,7 @@ export function getUserActivityConfiguration () {
   }
 
   const activityBarWidth = 38
-  const activityBarHeight = 123
+  const activityBarHeight = 124
 
   // position the user activity
   userActivityGroup.groupTransform.translate.x = 42
@@ -98,9 +98,8 @@ function updateActivityBar (activity: string, barConfig: any, width: number, hei
   barConfig[activity].foreground.x = barConfig[activity].background.x = 3
   barConfig[activity].foreground.width = barConfig[activity].background.width = width - 3
   barConfig[activity].foreground.height = barConfig[activity].background.height = height
-  barConfig[activity].value.x = -1
-  barConfig[activity].value.y = -5
-  barConfig[activity].value.textAnchor = 'end'
+  barConfig[activity].value.x = -3
+  barConfig[activity].value.y = -11
   barConfig[activity].valueGroup.groupTransform.rotate.angle = 90
   barConfig[activity].valueGroup.groupTransform.translate.y = height
 }

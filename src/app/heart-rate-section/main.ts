@@ -35,9 +35,8 @@ export function getHeartRateConfiguration () {
   elements.heartRateBackground.width = 42
   elements.heartRateBackground.height = 124
 
-  elements.heartRateValue.x = 0
-  elements.heartRateValue.y = 0
-  elements.heartRateValue.textAnchor = 'end'
+  elements.heartRateValue.x = -5
+  elements.heartRateValue.y = -4
   elements.heartRateValueGroup.groupTransform.rotate.angle = 90
   elements.heartRateValueGroup.groupTransform.translate.y = elements.heartRateBackground.height
 

@@ -1,6 +1,6 @@
 <g id="heart-rate">
     <rect id="heart-rate__background" />
     <g id="heart-rate__value-group">
-        <text id="heart-rate__value" fill="white" class="heart-rate__value" text-length="3"/>
+        <text id="heart-rate__value" class="heart-rate__text" text-length="3"/>
     </g>
 </g>
