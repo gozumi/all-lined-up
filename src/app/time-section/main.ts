@@ -72,7 +72,7 @@ function updateTimeBar (unit: string, config: any, width: number, height: number
   config[unit].foreground.height = config[unit].background.height = height - 3
   config[unit].foreground.x = config[unit].background.x = 0
   config[unit].foreground.y = config[unit].background.y = 0
-  config[unit].text.x = 55
+  config[unit].text.x = 54
   config[unit].text.y = 0
   config[unit].text.fontSize = 50
   config[unit].valueGroup.groupTransform.translate.x = 5

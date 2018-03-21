@@ -5,6 +5,7 @@
     <g id="user-activity__steps-value-text-group">
       <text id="user-activity__steps-value-text" class="user-activity__text" text-length="10"/>
     </g>
+    <image id="user-activity__steps-icon" class="user-activity__icon" href="images/steps-orange.png" />
   </g>
   <g id="user-activity__distance">
     <rect id="user-activity__distance-background" />
@@ -12,6 +13,7 @@
     <g id="user-activity__distance-value-text-group">
       <text id="user-activity__distance-value-text" class="user-activity__text" text-length="10"/>
     </g>
+    <image id="user-activity__distance-icon" class="user-activity__icon" href="images/steps-red.png" />
   </g>
   <g id="user-activity__floors">
     <rect id="user-activity__floors-background" />
@@ -19,6 +21,7 @@
     <g id="user-activity__floors-value-text-group">
       <text id="user-activity__floors-value-text" class="user-activity__text" text-length="10"/>
     </g>
+    <image id="user-activity__floors-icon" class="user-activity__icon" href="images/steps-orange.png" />
   </g>
   <g id="user-activity__energy">
     <rect id="user-activity__energy-background" />
@@ -26,6 +29,7 @@
     <g id="user-activity__energy-value-text-group">
       <text id="user-activity__energy-value-text" class="user-activity__text" text-length="10"/>
     </g>
+    <image id="user-activity__energy-icon" class="user-activity__icon" href="images/steps-red.png" />
   </g>
   <g id="user-activity__time">
     <rect id="user-activity__time-background" />
@@ -33,5 +37,6 @@
     <g id="user-activity__time-value-text-group">
       <text id="user-activity__time-value-text" class="user-activity__text" text-length="10"/>
     </g>
+    <image id="user-activity__time-icon" class="user-activity__icon" href="images/steps-orange.png" />
   </g>
 </g>

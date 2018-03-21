@@ -3,4 +3,5 @@
     <g id="heart-rate__value-group">
         <text id="heart-rate__value" class="heart-rate__text" text-length="3"/>
     </g>
+    <image id="heart-rate__icon" href="images/heart.png" />
 </g>

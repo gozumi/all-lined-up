@@ -20,6 +20,7 @@ export function getHeartRateConfiguration () {
 
   const elements = {
     heartRateBackground: document.getElementById('heart-rate__background'),
+    heartRateIcon: document.getElementById('heart-rate__icon'),
     heartRateValue: document.getElementById('heart-rate__value'),
     heartRateValueGroup: document.getElementById('heart-rate__value-group'),
     screen: {
@@ -35,10 +36,15 @@ export function getHeartRateConfiguration () {
   elements.heartRateBackground.width = 42
   elements.heartRateBackground.height = 124
 
-  elements.heartRateValue.x = -5
-  elements.heartRateValue.y = -4
+  elements.heartRateValue.x = -35
+  elements.heartRateValue.y = -5
   elements.heartRateValueGroup.groupTransform.rotate.angle = 90
   elements.heartRateValueGroup.groupTransform.translate.y = elements.heartRateBackground.height
+
+  elements.heartRateIcon.x = 4
+  elements.heartRateIcon.y = 94
+  elements.heartRateIcon.width = 34
+  elements.heartRateIcon.height = 26
 
   return elements
 }
