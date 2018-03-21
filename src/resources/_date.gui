@@ -2,16 +2,16 @@
     <g id="date__day">
         <rect id="date__day-background"/>
         <rect id="date__day-foreground"/>
-        <text id="date__day-text" class="date__text" fill="white" text-length="2"/>
+        <text id="date__day-text" class="date__text" text-length="2"/>
     </g>
     <g id="date__month">
         <rect id="date__month-background"/>
         <rect id="date__month-foreground"/>
-        <text id="date__month-text" class="date__text" fill="white" text-length="2"/>
+        <text id="date__month-text" class="date__text" text-length="2"/>
     </g>
     <g id="date__year">
         <rect id="date__year-background"/>
         <rect id="date__year-foreground"/>
-        <text id="date__year-text" class="date__text" fill="white" text-length="4"/>
+        <text id="date__year-text" class="date__text" text-length="4"/>
     </g>
 </g>

@@ -59,16 +59,16 @@ export function getDateConfiguration () {
   elements.dayForeground.x = elements.dayBackground.x = 3
   elements.dayForeground.height = elements.dayBackground.height = 81
   elements.dayForeground.width = elements.dayBackground.width = 54
-  elements.dayText.x = 0
-  elements.dayText.y = elements.dayBackground.height
+  elements.dayText.x = elements.dayBackground.width - 1
+  elements.dayText.y = elements.dayBackground.height - 3
 
   // month
   elements.monthGroup.groupTransform.translate.x = 58
   elements.monthForeground.x = elements.monthBackground.x = 2
   elements.monthForeground.height = elements.monthBackground.height = 81
   elements.monthForeground.width = elements.monthBackground.width = 56
-  elements.monthText.x = 0
-  elements.monthText.y = elements.monthBackground.height
+  elements.monthText.x = elements.monthBackground.width - 1
+  elements.monthText.y = elements.monthBackground.height - 3
 
   // year
   elements.yearGroup.groupTransform.translate.y = 81
@@ -76,8 +76,8 @@ export function getDateConfiguration () {
   elements.yearBackground.y = 3
   elements.yearBackground.height = 40
   elements.yearBackground.width = 116
-  elements.yearText.x = 3
-  elements.yearText.y = elements.yearBackground.height + 2
+  elements.yearText.x = elements.yearBackground.width - 2
+  elements.yearText.y = elements.yearBackground.height - 1
 
   return elements
 }
