@@ -30,10 +30,10 @@ export function getHeartRateConfiguration () {
 
   // position the heart rate
   heartRateGroup.groupTransform.translate.x = 0
-  heartRateGroup.groupTransform.translate.y = elements.screen.height / 2
+  heartRateGroup.groupTransform.translate.y = 126
 
-  elements.heartRateBackground.width = elements.screen.width / 9
-  elements.heartRateBackground.height = elements.screen.height / 2
+  elements.heartRateBackground.width = 42
+  elements.heartRateBackground.height = 124
 
   elements.heartRateValue.x = 0
   elements.heartRateValue.y = 0

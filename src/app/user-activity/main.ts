@@ -62,12 +62,12 @@ export function getUserActivityConfiguration () {
     }
   }
 
-  const activityBarWidth = elements.screen.width / 9
-  const activityBarHeight = elements.screen.height / 2
+  const activityBarWidth = 38
+  const activityBarHeight = 123
 
   // position the user activity
-  userActivityGroup.groupTransform.translate.x = elements.screen.width / 9
-  userActivityGroup.groupTransform.translate.y = elements.screen.height / 2
+  userActivityGroup.groupTransform.translate.x = 42
+  userActivityGroup.groupTransform.translate.y = 126
 
   updateActivityBar('steps', elements, activityBarWidth, activityBarHeight)
 
@@ -95,10 +95,11 @@ export function getUserActivityConfiguration () {
  */
 function updateActivityBar (activity: string, barConfig: any, width: number, height: number) {
   // set up user steps
-  barConfig[activity].foreground.width = barConfig[activity].background.width = width
+  barConfig[activity].foreground.x = barConfig[activity].background.x = 3
+  barConfig[activity].foreground.width = barConfig[activity].background.width = width - 3
   barConfig[activity].foreground.height = barConfig[activity].background.height = height
-  barConfig[activity].value.x = 0
-  barConfig[activity].value.y = 0
+  barConfig[activity].value.x = -1
+  barConfig[activity].value.y = -5
   barConfig[activity].value.textAnchor = 'end'
   barConfig[activity].valueGroup.groupTransform.rotate.angle = 90
   barConfig[activity].valueGroup.groupTransform.translate.y = height

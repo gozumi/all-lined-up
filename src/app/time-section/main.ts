@@ -13,17 +13,9 @@ export function drawTime (config: any) {
   const minutes = today.getMinutes()
   const seconds = today.getSeconds()
 
-  const hourWidth = config.screen.width / totalHours
-  config.hourForeground.width = hourWidth * hours
-  config.hourText.text = hours
-
-  const minuteWidth = config.screen.width / 60
-  config.minuteForeground.width = minuteWidth * minutes
-  config.minuteText.text = minutes
-
-  const secondsWidth = config.screen.width / 60
-  config.secondForeground.width = secondsWidth * seconds
-  config.secondText.text = seconds
+  updateDynamicValues('hour', config, hours, 24)
+  updateDynamicValues('minute', config, minutes, 60)
+  updateDynamicValues('second', config, seconds, 60)
 }
 
 /**
@@ -34,49 +26,54 @@ export function getTimeConfiguration () {
   const time = document.getElementById('time')
 
   const elements = {
-    hourBackground: document.getElementById('time__hour-background'),
-    hourForeground: document.getElementById('time__hour-foreground'),
-    hourText: document.getElementById('time__hour-text'),
-    minuteBackground: document.getElementById('time__minute-background'),
-    minuteForeground: document.getElementById('time__minute-foreground'),
-    minuteText: document.getElementById('time__minute-text'),
+    hour: {
+      background: document.getElementById('time__hour-background'),
+      foreground: document.getElementById('time__hour-foreground'),
+      text: document.getElementById('time__hour-text')
+    },
+    minute: {
+      background: document.getElementById('time__minute-background'),
+      foreground: document.getElementById('time__minute-foreground'),
+      group: document.getElementById('time__minute-group'),
+      text: document.getElementById('time__minute-text')
+    },
     screen: {
       height: root.height,
       width: root.width
     },
-    secondBackground: document.getElementById('time__second-background'),
-    secondForeground: document.getElementById('time__second-foreground'),
-    secondText: document.getElementById('time__second-text'),
-    timeBarHeight: root.height / 6
+    second: {
+      background: document.getElementById('time__second-background'),
+      foreground: document.getElementById('time__second-foreground'),
+      group: document.getElementById('time__second-group'),
+      text: document.getElementById('time__second-text')
+    }
   }
 
-  elements.hourBackground.width = elements.screen.width
-  elements.hourBackground.height = elements.timeBarHeight
-  elements.hourBackground.y = 0
-  elements.hourForeground.height = elements.timeBarHeight
-  elements.hourForeground.y = 0
-  elements.hourText.x = 0
-  elements.hourText.y = elements.timeBarHeight
+  const timeBarHeight = 42
+  const timeBarWidth = elements.screen.width
 
-  elements.minuteBackground.width = elements.screen.width
-  elements.minuteBackground.height = elements.timeBarHeight
-  elements.minuteBackground.y = elements.timeBarHeight
-  elements.minuteForeground.height = elements.timeBarHeight
-  elements.minuteForeground.y = elements.timeBarHeight
-  elements.minuteText.x = 0
-  elements.minuteText.y = elements.timeBarHeight * 2
+  updateTimeBar('hour', elements, timeBarWidth, timeBarHeight)
 
-  elements.secondBackground.width = elements.screen.width
-  elements.secondBackground.height = elements.timeBarHeight
-  elements.secondBackground.y = elements.timeBarHeight * 2
-  elements.secondForeground.height = elements.timeBarHeight
-  elements.secondForeground.y = elements.timeBarHeight * 2
-  elements.secondText.x = 0
-  elements.secondText.y = elements.timeBarHeight * 3
+  updateTimeBar('minute', elements, timeBarWidth, timeBarHeight)
+  elements.minute.group.groupTransform.translate.y = timeBarHeight
 
-  // position the time
-  time.groupTransform.translate.x = 0
-  time.groupTransform.translate.y = 0
+  updateTimeBar('second', elements, timeBarWidth, timeBarHeight)
+  elements.second.group.groupTransform.translate.y = timeBarHeight * 2
 
   return elements
+}
+
+function updateTimeBar (unit: string, config: any, width: number, height: number) {
+  config[unit].background.width = width
+  config[unit].foreground.height = config[unit].background.height = height - 3
+  config[unit].foreground.x = config[unit].background.x = 0
+  config[unit].foreground.y = config[unit].background.y = 0
+  config[unit].text.x = 0
+  config[unit].text.y = height - 3
+}
+
+function updateDynamicValues (unit: string, config: any, value: number, total: number) {
+  const hourWidth = config.screen.width / total
+  config[unit].foreground.width = hourWidth * value
+  config[unit].text.text = value
 }

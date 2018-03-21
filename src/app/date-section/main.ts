@@ -46,36 +46,38 @@ export function getDateConfiguration () {
       height: root.height,
       width: root.width
     },
-    yearBackgound: document.getElementById('date__year-background'),
+    yearBackground: document.getElementById('date__year-background'),
     yearGroup: document.getElementById('date__year'),
     yearText: document.getElementById('date__year-text')
   }
 
   // position the date
-  dateGroup.groupTransform.translate.x = elements.screen.width - (elements.screen.width / 3)
-  dateGroup.groupTransform.translate.y = elements.screen.height / 2
+  dateGroup.groupTransform.translate.x = 232
+  dateGroup.groupTransform.translate.y = 126
 
   // day
-  elements.dayBackground.height = elements.screen.height / 3
-  elements.dayForeground.width = elements.dayBackground.width = elements.screen.width / 6
+  elements.dayForeground.x = elements.dayBackground.x = 3
+  elements.dayForeground.height = elements.dayBackground.height = 81
+  elements.dayForeground.width = elements.dayBackground.width = 54
   elements.dayText.x = 0
   elements.dayText.y = elements.dayBackground.height
 
   // month
-  elements.monthGroup.groupTransform.translate.x = elements.dayBackground.width
-  elements.monthBackground.height = elements.screen.height / 3
-  elements.monthForeground.width = elements.monthBackground.width = elements.screen.width / 6
-  elements.monthBackground.height = elements.screen.height / 3
-  elements.monthBackground.width = elements.screen.width / 6
+  elements.monthGroup.groupTransform.translate.x = 58
+  elements.monthForeground.x = elements.monthBackground.x = 2
+  elements.monthForeground.height = elements.monthBackground.height = 81
+  elements.monthForeground.width = elements.monthBackground.width = 56
   elements.monthText.x = 0
   elements.monthText.y = elements.monthBackground.height
 
   // year
-  elements.yearGroup.groupTransform.translate.y = elements.screen.height / 3
-  elements.yearBackgound.height = elements.screen.height / 6
-  elements.yearBackgound.width = elements.screen.width / 3
-  elements.yearText.x = 0
-  elements.yearText.y = elements.yearBackgound.height
+  elements.yearGroup.groupTransform.translate.y = 81
+  elements.yearBackground.x = 3
+  elements.yearBackground.y = 3
+  elements.yearBackground.height = 40
+  elements.yearBackground.width = 116
+  elements.yearText.x = 3
+  elements.yearText.y = elements.yearBackground.height + 2
 
   return elements
 }
