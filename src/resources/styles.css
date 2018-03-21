@@ -17,29 +17,29 @@
 }
 
 #time__second-foreground {
-  fill: #0000ff;
+  fill: olivedrab;
 }
 
 #time__second-background {
-  fill: #0000ff;
+  fill: olivedrab;
   fill-opacity: .3;
 }
 
 #date__day-foreground {
-  fill: teal;
+  fill: firebrick;
 }
 
 #date__day-background {
-  fill: teal;
+  fill: firebrick;
   fill-opacity: .3;
 }
 
 #date__month-foreground {
-  fill: blueviolet;
+  fill: olivedrab;
 }
 
 #date__month-background {
-  fill: blueviolet;
+  fill: olivedrab;
   fill-opacity: .3;
 }
 
@@ -48,50 +48,50 @@
 }
 
 #heart-rate {
-  fill: olive;
+  fill: firebrick;
 }
 
 #user-activity__steps-foreground {
-  fill: cornflowerblue;
+  fill: olivedrab;
 }
 
 #user-activity__steps-background {
-  fill: cornflowerblue;
+  fill: olivedrab;
   opacity: .3;
 }
 
 #user-activity__distance-foreground {
-  fill: darkorchid;
+  fill: orange;
 }
 
 #user-activity__distance-background {
-  fill: darkorchid;
+  fill: orange;
   opacity: .3;
 }
 
 #user-activity__floors-foreground {
-  fill: orchid;
+  fill: olivedrab;
 }
 
 #user-activity__floors-background {
-  fill: orchid;
+  fill: olivedrab;
   opacity: .3;
 }
 
 #user-activity__energy-foreground {
-  fill: goldenrod;
+  fill: orange;
 }
 
 #user-activity__energy-background {
-  fill: goldenrod;
+  fill: orange;
   opacity: .3;
 }
 
 #user-activity__time-foreground {
-  fill: hotpink;
+  fill: olivedrab;
 }
 
 #user-activity__time-background {
-  fill: hotpink;
+  fill: olivedrab;
   opacity: .3;
 }
