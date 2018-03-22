@@ -4,11 +4,11 @@
 
 #time__hour-background {
   fill: firebrick;
-  fill-opacity: .6;
+  fill-opacity: .3;
 }
 
 #time__hour-text {
-  fill: black;
+  fill: orange;
 }
 
 #time__minute-foreground {
@@ -17,11 +17,11 @@
 
 #time__minute-background {
   fill: orange;
-  fill-opacity: .6;
+  fill-opacity: .3;
 }
 
 #time__minute-text {
-  fill: black;
+  fill: firebrick;
 }
 
 #time__second-foreground {
@@ -30,7 +30,7 @@
 
 #time__second-background {
   fill: olivedrab;
-  fill-opacity: .6;
+  fill-opacity: .3;
 }
 
 #time__second-text {
