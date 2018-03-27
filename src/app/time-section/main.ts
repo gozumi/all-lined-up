@@ -72,7 +72,7 @@ function updateTimeBar (unit: string, config: any, width: number, height: number
   config[unit].foreground.height = config[unit].background.height = height - 3
   config[unit].foreground.x = config[unit].background.x = 0
   config[unit].foreground.y = config[unit].background.y = 0
-  config[unit].text.x = 55
+  config[unit].text.x = 54
   config[unit].text.y = 0
   config[unit].text.fontSize = 50
   config[unit].valueGroup.groupTransform.translate.x = 5
@@ -80,7 +80,10 @@ function updateTimeBar (unit: string, config: any, width: number, height: number
 }
 
 function updateDynamicValues (unit: string, config: any, value: number, total: number) {
-  const hourWidth = config.screen.width / total
-  config[unit].foreground.width = hourWidth * value
+  const hourWidth = (config.screen.width - 60) / total
+  config[unit].foreground.width = (hourWidth * value) + 60
+  config[unit].background.width = config.screen.width - config[unit].foreground.width - 3
+  config[unit].background.x = config[unit].foreground.width + 3
+  config[unit].text.x = config[unit].foreground.width - 8
   config[unit].text.text = value
 }

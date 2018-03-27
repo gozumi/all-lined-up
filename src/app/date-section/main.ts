@@ -9,7 +9,7 @@ import { ROOT_ELEMENT_ID } from '../_constants'
 export function drawDate (config: any) {
   const today = new Date()
   const currentDay = today.getDate()
-  const currentMonth = today.getMonth() - 1
+  const currentMonth = today.getMonth() + 1
   const currentYear = today.getFullYear()
   const daysInMonth = numberOfdaysInMonth(currentMonth, currentYear)
   const dayUnitHeight = config.dayBackground.height / daysInMonth
@@ -19,9 +19,15 @@ export function drawDate (config: any) {
   config.dayForeground.height = dayUnitHeight * currentDay
   config.dayForeground.y = config.dayBackground.height - config.dayForeground.height
 
-  config.monthText.text = today.getMonth() + 1
+  config.monthText.text = currentMonth
   config.monthForeground.height = monthUnitHeight * currentMonth
   config.monthForeground.y = config.monthBackground.height - config.monthForeground.height
+
+  const monthFontSize = currentMonth < 10 ? 81 : 48
+  config.monthText.style.fontSize = monthFontSize
+
+  const dayFontSize = currentDay < 10 ? 81 : 41
+  config.dayText.style.fontSize = dayFontSize
 
   config.yearText.text = today.getFullYear()
 }
@@ -59,16 +65,16 @@ export function getDateConfiguration () {
   elements.dayForeground.x = elements.dayBackground.x = 3
   elements.dayForeground.height = elements.dayBackground.height = 81
   elements.dayForeground.width = elements.dayBackground.width = 54
-  elements.dayText.x = elements.dayBackground.width - 1
-  elements.dayText.y = elements.dayBackground.height - 3
+  elements.dayText.x = elements.dayBackground.width + 1
+  elements.dayText.y = elements.dayBackground.height - 4
 
   // month
   elements.monthGroup.groupTransform.translate.x = 58
   elements.monthForeground.x = elements.monthBackground.x = 2
   elements.monthForeground.height = elements.monthBackground.height = 81
   elements.monthForeground.width = elements.monthBackground.width = 56
-  elements.monthText.x = elements.monthBackground.width - 1
-  elements.monthText.y = elements.monthBackground.height - 3
+  elements.monthText.x = elements.monthBackground.width
+  elements.monthText.y = elements.monthBackground.height - 5
 
   // year
   elements.yearGroup.groupTransform.translate.y = 81
@@ -76,7 +82,7 @@ export function getDateConfiguration () {
   elements.yearBackground.y = 3
   elements.yearBackground.height = 40
   elements.yearBackground.width = 116
-  elements.yearText.x = elements.yearBackground.width - 2
+  elements.yearText.x = elements.yearBackground.width - 4
   elements.yearText.y = elements.yearBackground.height - 1
 
   return elements

@@ -1,6 +1,7 @@
 import document from 'document'
 
 import { ROOT_ELEMENT_ID } from '../_constants'
+import { formatNumber } from '../_utils/main'
 
 /**
  *
@@ -26,6 +27,7 @@ export function getUserActivityConfiguration () {
       background: document.getElementById('user-activity__time-background'),
       foreground: document.getElementById('user-activity__time-foreground'),
       group: document.getElementById('user-activity__time'),
+      icon: document.getElementById('user-activity__time-icon'),
       value: document.getElementById('user-activity__time-value-text'),
       valueGroup: document.getElementById('user-activity__time-value-text-group')
     },
@@ -33,6 +35,7 @@ export function getUserActivityConfiguration () {
       background: document.getElementById('user-activity__energy-background'),
       foreground: document.getElementById('user-activity__energy-foreground'),
       group: document.getElementById('user-activity__energy'),
+      icon: document.getElementById('user-activity__energy-icon'),
       value: document.getElementById('user-activity__energy-value-text'),
       valueGroup: document.getElementById('user-activity__energy-value-text-group')
     },
@@ -40,6 +43,7 @@ export function getUserActivityConfiguration () {
       background: document.getElementById('user-activity__distance-background'),
       foreground: document.getElementById('user-activity__distance-foreground'),
       group: document.getElementById('user-activity__distance'),
+      icon: document.getElementById('user-activity__distance-icon'),
       value: document.getElementById('user-activity__distance-value-text'),
       valueGroup: document.getElementById('user-activity__distance-value-text-group')
     },
@@ -47,6 +51,7 @@ export function getUserActivityConfiguration () {
       background: document.getElementById('user-activity__floors-background'),
       foreground: document.getElementById('user-activity__floors-foreground'),
       group: document.getElementById('user-activity__floors'),
+      icon: document.getElementById('user-activity__floors-icon'),
       value: document.getElementById('user-activity__floors-value-text'),
       valueGroup: document.getElementById('user-activity__floors-value-text-group')
     },
@@ -57,6 +62,7 @@ export function getUserActivityConfiguration () {
     steps: {
       background: document.getElementById('user-activity__steps-background'),
       foreground: document.getElementById('user-activity__steps-foreground'),
+      icon: document.getElementById('user-activity__steps-icon'),
       value: document.getElementById('user-activity__steps-value-text'),
       valueGroup: document.getElementById('user-activity__steps-value-text-group')
     }
@@ -98,10 +104,14 @@ function updateActivityBar (activity: string, barConfig: any, width: number, hei
   barConfig[activity].foreground.x = barConfig[activity].background.x = 3
   barConfig[activity].foreground.width = barConfig[activity].background.width = width - 3
   barConfig[activity].foreground.height = barConfig[activity].background.height = height
-  barConfig[activity].value.x = -3
-  barConfig[activity].value.y = -11
+  barConfig[activity].value.x = -25
+  barConfig[activity].value.y = -10
   barConfig[activity].valueGroup.groupTransform.rotate.angle = 90
   barConfig[activity].valueGroup.groupTransform.translate.y = height
+  barConfig[activity].icon.x = 6
+  barConfig[activity].icon.y = height - 21
+  barConfig[activity].icon.width = 28
+  barConfig[activity].icon.height = 19
 }
 
 /**
@@ -112,7 +122,7 @@ function updateActivityBar (activity: string, barConfig: any, width: number, hei
  * @param goals The user goals
  */
 function updateDynamicValues (activity: string, barConfig: any, today: any, goals: any) {
-  barConfig[activity].value.text = today[activity]
+  barConfig[activity].value.text = formatNumber(today[activity])
   barConfig[activity].foreground.height =
     today[activity] < goals[activity] ?
       (today[activity] / goals[activity]) * barConfig[activity].background.height :

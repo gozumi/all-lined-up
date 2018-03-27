@@ -16,8 +16,9 @@ clock.ontick = () => {
 
 // setup the heart rate
 const heartRateMonitor = new HeartRateSensor()
+const heartRateConfiguration = getHeartRateConfiguration()
 heartRateMonitor.onreading = () => {
-  drawHeartRate(heartRateMonitor.heartRate, getHeartRateConfiguration())
+  drawHeartRate(heartRateMonitor.heartRate, heartRateConfiguration)
 }
 heartRateMonitor.start()
 

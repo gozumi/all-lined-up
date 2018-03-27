@@ -7,6 +7,10 @@
   fill-opacity: .3;
 }
 
+#time__hour-text {
+  fill: orange;
+}
+
 #time__minute-foreground {
   fill: orange;
 }
@@ -14,6 +18,10 @@
 #time__minute-background {
   fill: orange;
   fill-opacity: .3;
+}
+
+#time__minute-text {
+  fill: firebrick;
 }
 
 #time__second-foreground {
@@ -25,9 +33,11 @@
   fill-opacity: .3;
 }
 
+#time__second-text {
+  fill: black;
+}
+
 .time__text {
-  fill: white;
-  fill-opacity: .8;
   font-family: "Colfax-Black";
   font-size: 43;
   text-anchor: end
@@ -39,7 +49,7 @@
 
 #date__day-background {
   fill: firebrick;
-  fill-opacity: .3;
+  fill-opacity: .6;
 }
 
 #date__month-foreground {
@@ -48,38 +58,46 @@
 
 #date__month-background {
   fill: olivedrab;
-  fill-opacity: .3;
+  fill-opacity: .6;
 }
 
 #date__year-background {
   fill: orange;
 }
 
-.date__text {
+#date__day-text {
   fill: black;
-  fill-opacity: .5;
   font-family: "Colfax-Black";
-  font-size: 35;
   text-anchor: end
 }
 
-#date__day-text {
-  fill-opacity: 1;
+#date__month-text {
+  fill: black;
+  font-family: "Colfax-Black";
+  text-anchor: end
 }
 
-#date__month-text {
-  fill-opacity: 1;
+#date__year-text {
+  fill: black;
+  fill-opacity: .5;
+  font-family: "Colfax-Black";
+  text-anchor: end;
+  font-size: 45;
 }
 
 #heart-rate {
   fill: firebrick;
 }
 
+#heart-rate__icon {
+  opacity: 1;
+}
+
 .heart-rate__text {
-  fill: white;
-  fill-opacity: .3;
+  fill: orange;
+  fill-opacity: .9;
   font-family: "Colfax-Black";
-  font-size: 44;
+  font-size: 45;
   text-anchor: end
 }
 
@@ -89,7 +107,11 @@
 
 #user-activity__steps-background {
   fill: olivedrab;
-  opacity: .3;
+  opacity: .2;
+}
+
+#user-activity__steps-value-text {
+  fill: orange;
 }
 
 #user-activity__distance-foreground {
@@ -98,7 +120,11 @@
 
 #user-activity__distance-background {
   fill: orange;
-  opacity: .3;
+  opacity: .1;
+}
+
+#user-activity__distance-value-text {
+  fill: firebrick;
 }
 
 #user-activity__floors-foreground {
@@ -107,7 +133,11 @@
 
 #user-activity__floors-background {
   fill: olivedrab;
-  opacity: .3;
+  opacity: .2;
+}
+
+#user-activity__floors-value-text {
+  fill: orange;
 }
 
 #user-activity__energy-foreground {
@@ -116,7 +146,11 @@
 
 #user-activity__energy-background {
   fill: orange;
-  opacity: .3;
+  opacity: .1;
+}
+
+#user-activity__energy-value-text {
+  fill: firebrick;
 }
 
 #user-activity__time-foreground {
@@ -125,13 +159,19 @@
 
 #user-activity__time-background {
   fill: olivedrab;
-  opacity: .3;
+  opacity: .2;
+}
+
+#user-activity__time-value-text {
+  fill: orange;
 }
 
 .user-activity__text {
-  fill: black;
-  fill-opacity: .3;
   font-family: "Colfax-Black";
-  font-size: 30;
+  font-size: 28;
   text-anchor: end
+}
+
+.user-activity__icon {
+  opacity: 1;
 }
