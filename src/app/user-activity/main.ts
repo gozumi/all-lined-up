@@ -108,9 +108,9 @@ function updateActivityBar (activity: string, barConfig: any, width: number, hei
   barConfig[activity].value.y = -10
   barConfig[activity].valueGroup.groupTransform.rotate.angle = 90
   barConfig[activity].valueGroup.groupTransform.translate.y = height
-  barConfig[activity].icon.x = 6
+  barConfig[activity].icon.x = 12
   barConfig[activity].icon.y = height - 21
-  barConfig[activity].icon.width = 28
+  barConfig[activity].icon.width = 19
   barConfig[activity].icon.height = 19
 }
 

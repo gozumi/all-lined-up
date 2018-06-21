@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="44px" viewBox="0 0 32 44" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>Group</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="icons/stat_dist_open_48px" transform="translate(-8.000000, -2.000000)">
+            <g id="Group" transform="translate(6.000000, 0.000000)">
+                <rect id="Rectangle" x="0" y="0" width="36" height="48"></rect>
+                <path d="M18,43.5201828 C19.4327373,41.6371584 21.7052451,38.6509534 22.5910349,37.4564025 C24.3117456,35.1359013 25.7406746,33.1081482 26.9923346,31.1825175 C28.0843126,29.5025513 29.0181014,27.9334808 29.7949642,26.4581981 L29.8928457,26.2976198 C31.5811117,23.8828218 32.5,21.0122348 32.5,18 C32.5,9.99187113 26.0081289,3.5 18,3.5 C9.99187113,3.5 3.5,9.99187113 3.5,18 C3.5,21.0122348 4.41888826,23.8828218 6.10715431,26.2976198 L6.20503584,26.4581981 C6.98189855,27.9334808 7.91568738,29.5025513 9.00766542,31.1825175 C10.2593254,33.1081482 11.6882544,35.1359013 13.4089651,37.4564025 C14.2947549,38.6509534 16.5672627,41.6371584 18,43.5201828 Z" id="Combined-Shape" stroke="#FFFFFF" stroke-width="3"></path>
+                <circle id="icn-Distance-Solid" fill="#FFFFFF" cx="18" cy="18" r="4"></circle>
+            </g>
+        </g>
+    </g>
+</svg>

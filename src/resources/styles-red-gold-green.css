@@ -1,32 +1,40 @@
 #time__hour-foreground {
-  fill: #ffffff;
-  fill-opacity: .8;
+  fill: firebrick;
+}
+
+#time__hour-background {
+  fill: firebrick;
+  fill-opacity: .3;
 }
 
 #time__hour-text {
-  fill: black;
-  font-family: "Colfax-Black";
+  fill: orange;
 }
 
 #time__minute-foreground {
-  fill: #ffffff;
-  fill-opacity: .5;
+  fill: orange;
+}
+
+#time__minute-background {
+  fill: orange;
+  fill-opacity: .3;
 }
 
 #time__minute-text {
-  fill: white;
-  font-family: "Seville-Book";
-  font-weight: bold;
+  fill: firebrick;
 }
 
 #time__second-foreground {
-  fill: #ffffff;
-  fill-opacity: .1;
+  fill: olivedrab;
+}
+
+#time__second-background {
+  fill: olivedrab;
+  fill-opacity: .3;
 }
 
 #time__second-text {
-  fill: white;
-  font-family: "Seville-Book";
+  fill: black;
 }
 
 .time__text {
@@ -36,39 +44,37 @@
 }
 
 #date__day-foreground {
-  fill: #ffffff;
-  fill-opacity: .2;
+  fill: firebrick;
+}
+
+#date__day-background {
+  fill: firebrick;
+  fill-opacity: .6;
 }
 
 #date__month-foreground {
-  fill: #ffffff;
-  fill-opacity: .5;
+  fill: olivedrab;
+}
+
+#date__month-background {
+  fill: olivedrab;
+  fill-opacity: .6;
 }
 
 #date__year-background {
-  fill: #ffffff;
-  fill-opacity: .8;
+  fill: orange;
 }
 
 #date__day-text {
-  fill: white;
+  fill: black;
   font-family: "Colfax-Black";
-  text-anchor: end;
-  font-size: 28;
-}
-
-#date__day-text-suffix {
-  fill: white;
-  font-family: "Tungsten";
-  text-anchor: end;
-  font-size: 20;
+  text-anchor: end
 }
 
 #date__month-text {
-  fill: white;
-  font-family: "Tungsten";
-  text-anchor: end;
-  font-size: 35;
+  fill: black;
+  font-family: "Colfax-Black";
+  text-anchor: end
 }
 
 #date__year-text {
@@ -80,8 +86,7 @@
 }
 
 #heart-rate {
-  fill: #ffffff;
-  fill-opacity: .8;
+  fill: firebrick;
 }
 
 #heart-rate__icon {
@@ -89,60 +94,76 @@
 }
 
 .heart-rate__text {
-  fill: black;
+  fill: orange;
+  fill-opacity: .9;
   font-family: "Colfax-Black";
   font-size: 45;
   text-anchor: end
 }
 
 #user-activity__steps-foreground {
-  fill: #ffffff;
-  fill-opacity: .5;
+  fill: olivedrab;
+}
+
+#user-activity__steps-background {
+  fill: olivedrab;
+  opacity: .2;
 }
 
 #user-activity__steps-value-text {
-  fill: white;
-  font-family: "Seville-Book";
+  fill: orange;
 }
 
 #user-activity__distance-foreground {
-  fill: #ffffff;
-  fill-opacity: .2;
+  fill: orange;
+}
+
+#user-activity__distance-background {
+  fill: orange;
+  opacity: .1;
 }
 
 #user-activity__distance-value-text {
-  fill: white;
-  font-family: "Seville-Book";
+  fill: firebrick;
 }
 
 #user-activity__floors-foreground {
-  fill: #ffffff;
-  fill-opacity: .5;
+  fill: olivedrab;
+}
+
+#user-activity__floors-background {
+  fill: olivedrab;
+  opacity: .2;
 }
 
 #user-activity__floors-value-text {
-  fill: white;
-  font-family: "Seville-Book";
+  fill: orange;
 }
 
 #user-activity__energy-foreground {
-  fill: #ffffff;
-  fill-opacity: .2;
+  fill: orange;
+}
+
+#user-activity__energy-background {
+  fill: orange;
+  opacity: .1;
 }
 
 #user-activity__energy-value-text {
-  fill: white;
-  font-family: "Seville-Book";
+  fill: firebrick;
 }
 
 #user-activity__time-foreground {
-  fill: #ffffff;
-  fill-opacity: .5;
+  fill: olivedrab;
+}
+
+#user-activity__time-background {
+  fill: olivedrab;
+  opacity: .2;
 }
 
 #user-activity__time-value-text {
-  fill: white;
-  font-family: "Seville-Book";
+  fill: orange;
 }
 
 .user-activity__text {

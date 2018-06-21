@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>icn 40px Open Time</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="icons/stat_duration_32px_p" transform="translate(-4.000000, -4.000000)">
+            <g id="icn-40px-Open-Time">
+                <rect id="Rectangle-111-Copy" x="0" y="0" width="32" height="32"></rect>
+                <g id="icn-Time-Open-40px" transform="translate(4.000000, 4.000000)">
+                    <circle id="Oval-784" stroke="#FFFFFF" stroke-width="2" cx="12" cy="12" r="11"></circle>
+                    <rect id="Rectangle-1895" fill="#FFFFFF" x="11" y="11" width="7" height="2" rx="1"></rect>
+                    <rect id="Rectangle-1894" fill="#FFFFFF" x="11" y="5" width="2" height="8" rx="1"></rect>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
