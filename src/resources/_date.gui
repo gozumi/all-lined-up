@@ -3,6 +3,7 @@
         <rect id="date__day-background"/>
         <rect id="date__day-foreground"/>
         <text id="date__day-text" class="date__text" text-length="2"/>
+        <text id="date__day-text-suffix" class="date__text" text-length="2"/>
     </g>
     <g id="date__month">
         <rect id="date__month-background"/>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="46px" viewBox="0 0 32 46" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 2</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="icons/stat_cals_solid_48px" transform="translate(-8.000000, 0.000000)">
+            <g id="Group-2">
+                <rect id="Rectangle-2" x="0" y="0" width="48" height="48"></rect>
+                <path d="M36.4834225,30 L8,29.9901571 C8,15.9803142 26.5,15.000608 21.5,0 C34,12.5 24,15.000608 24,22.5 C26.5,27.5 31.5,22.5 29,17.5 C29,17.5 39.9992573,18.0023965 40,30 C40,37.3402916 35.0570931,43.5261055 28.3182264,45.4104944 C28.473843,38.0461519 22,34 22,34 C22,34 19.6010743,37.4160678 19.9730721,45.4889741 C13.0858305,43.7034552 8,37.4456573 8,30 L36.4834225,30 Z" id="Combined-Shape" fill="#FFFFFF"></path>
+            </g>
+        </g>
+    </g>
+</svg>

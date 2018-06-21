@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="44px" viewBox="0 0 32 44" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>Combined Shape</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="icons/stat_dist_solid_48px" transform="translate(-8.000000, -2.000000)" fill="#FFFFFF">
+            <path d="M37.1221938,27.1570982 C33.7069387,33.6427576 27.9754556,40.6993925 24,46 C20.0245444,40.6993925 14.2930613,33.6427576 10.8778062,27.1570982 C9.06403695,24.5627878 8,21.4056535 8,18 C8,9.163444 15.163444,2 24,2 C32.836556,2 40,9.163444 40,18 C40,21.4056535 38.935963,24.5627878 37.1221938,27.1570982 Z M24,23 C26.7614237,23 29,20.7614237 29,18 C29,15.2385763 26.7614237,13 24,13 C21.2385763,13 19,15.2385763 19,18 C19,20.7614237 21.2385763,23 24,23 Z" id="Combined-Shape"></path>
+        </g>
+    </g>
+</svg>
