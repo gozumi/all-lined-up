@@ -6,7 +6,7 @@ import { ROOT_ELEMENT_ID } from '../_constants'
  *
  * @param config
  */
-export function drawTime (config: any) {
+export function drawTime (config) {
   const totalHours = 24
   const today = new Date()
   const hours = today.getHours() % totalHours
@@ -67,7 +67,7 @@ export function getTimeConfiguration () {
   return elements
 }
 
-function updateTimeBar (unit: string, config: any, width: number, height: number) {
+function updateTimeBar (unit, config, width, height) {
   config[unit].background.width = width
   config[unit].foreground.height = config[unit].background.height = height - 3
   config[unit].foreground.x = config[unit].background.x = 0
@@ -79,7 +79,7 @@ function updateTimeBar (unit: string, config: any, width: number, height: number
   config[unit].valueGroup.groupTransform.translate.y = height - 7
 }
 
-function updateDynamicValues (unit: string, config: any, value: number, total: number) {
+function updateDynamicValues (unit, config, value, total) {
   const hourWidth = (config.screen.width - 60) / total
   config[unit].foreground.width = (hourWidth * value) + 60
   config[unit].background.width = config.screen.width - config[unit].foreground.width - 3

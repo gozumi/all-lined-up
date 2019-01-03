@@ -7,7 +7,7 @@ import { ROOT_ELEMENT_ID } from '../_constants'
  * @param heartRate
  * @param config
  */
-export function drawHeartRate (heartRate: number, config: any) {
+export function drawHeartRate (heartRate, config) {
   config.heartRateValue.text = heartRate
 }
 

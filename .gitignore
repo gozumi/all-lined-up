@@ -9,3 +9,6 @@ coverage/
 
 # build
 dist/
+
+# erro logs
+yarn-eror.log

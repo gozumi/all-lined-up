@@ -6,7 +6,7 @@ import { ROOT_ELEMENT_ID } from '../_constants'
  *
  * @param config
  */
-export function drawDate (config: any) {
+export function drawDate (config) {
   const today = new Date()
   const currentDay = today.getDate()
   const currentMonth = today.getMonth() + 1
@@ -87,11 +87,11 @@ export function getDateConfiguration () {
   return elements
 }
 
-function numberOfdaysInMonth (month: number, year: number) {
+function numberOfdaysInMonth (month, year) {
   return new Date(year, month, 0).getDate()
 }
 
-function getMonthText (monthNumber: number) {
+function getMonthText (monthNumber) {
   switch (monthNumber) {
     case 1:
       return 'Jan'
@@ -122,7 +122,7 @@ function getMonthText (monthNumber: number) {
   }
 }
 
-function getDaySuffix (dayNumber: number) {
+function getDaySuffix (dayNumber) {
   if (dayNumber === 1 || dayNumber === 21 || dayNumber === 31) {
     return 'st'
   } else if (dayNumber === 2 || dayNumber === 22) {
